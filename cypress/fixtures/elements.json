@@ -1,0 +1,13 @@
+{
+  "elements": {
+    "allElements": {
+      "furnitureCategory": "div[class='hidden lg:block'] div div[class='py-20 lg:py-40'] div div[class='hidden lg:block'] div img[alt='Furniture']",
+      "decorationCategory": "div[class='hidden lg:block'] div div[class='py-20 lg:py-40'] div div[class='hidden lg:block'] div img[alt='Decoration']",
+      "addToCartButton": "button[data-testid='add-to-cart-button']",
+      "goToCartButton": "button[data-testid='overlay-go-to-cart']>div[class='flex items-center justify-center gap-12']>div",
+      "cartItem": "p[data-testid=\"cart-item-name\"]",
+      "cartIcon": "div[class='absolute -top-6 flex h-16 items-center justify-center rounded-full px-2 py-4 text-center font-rom text-10 font-bold leading-12 tracking-[-.5px] left-10 w-16 bg-turquoise-medium text-raven-100 max-lg:[.bg-white_&]:bg-turquoise-medium max-lg:[.bg-white_&]:text-raven-100']"
+    }
+  }
+  
+}
