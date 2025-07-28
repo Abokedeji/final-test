@@ -27,18 +27,6 @@ Cypress.Commands.add('goToCart', () => {
   });
 });
 
-Cypress.Commands.add('clickFurnitureCategory', () => {
-  cy.fixture('elements').then((sel) => {
-    cy.get(sel.elements.allElements.furnitureCategory).click();
-  });
-});
-
-Cypress.Commands.add('clickDecorationCategory', () => {
-  cy.fixture('elements').then((sel) => {
-    cy.get(sel.elements.allElements.decorationCategory).click();
-  });
-});
-
 Cypress.Commands.add('verifyCartItem', () => {
   cy.fixture('elements').then((sel) => {
     cy.get(sel.elements.allElements.cartItem).should('be.visible');

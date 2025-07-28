@@ -7,12 +7,12 @@ Given(/^I am on the home page$/, () => {
 
 
 When(/^I click on Furniture category$/, () => {
-	cy.clickFurnitureCategory();
+	cy.clickAnyDivwithText('Furniture');
 });
 
 
 When(/^I click on Round Wooden Coffee Table Dan$/, () => {
-	cy.clickAnyLinkwithText('Round Wooden Coffee Table Dan', {force: true});
+	cy.clickAnyLinkwithText('Round Wooden Coffee Table Dan');
 });
 
 
@@ -38,7 +38,7 @@ Then(/^the cart icon should show a badge with 1$/, () => {
 
 
 When(/^I click on Decoration category$/, () => {
-	cy.clickDecorationCategory();
+	cy.clickAnyDivwithText('Decoration');
 });
 
 When(/^I click on Candle Holder Lily$/, () => {

@@ -1,8 +1,6 @@
 {
   "elements": {
     "allElements": {
-      "furnitureCategory": "div[class='hidden lg:block'] div div[class='py-20 lg:py-40'] div div[class='hidden lg:block'] div img[alt='Furniture']",
-      "decorationCategory": "div[class='hidden lg:block'] div div[class='py-20 lg:py-40'] div div[class='hidden lg:block'] div img[alt='Decoration']",
       "addToCartButton": "button[data-testid='add-to-cart-button']",
       "goToCartButton": "button[data-testid='overlay-go-to-cart']>div[class='flex items-center justify-center gap-12']>div",
       "cartItem": "p[data-testid=\"cart-item-name\"]",
