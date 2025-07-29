@@ -1,7 +1,9 @@
 Feature: Add Products to cart
+    
+    Background: 
+        Given I am on the home page
 
     Scenario: User can add products in the Furniture category to cart
-        Given I am on the home page
         When I click on Furniture category
         And I click on Round Wooden Coffee Table Dan
         And I click on Add to Cart
@@ -11,7 +13,6 @@ Feature: Add Products to cart
 
 
     Scenario: User can add products in the Decoration category to cart
-        Given I am on the home page
         When I click on Decoration category
         And I click on Candle Holder Lily
         And I click on Add to Cart
@@ -20,7 +21,6 @@ Feature: Add Products to cart
         And the cart icon should show a badge with 1
 
     Scenario: User can add products in the Rugs category to cart
-        Given I am on the home page
         When I click on Rugs category
         And I click on Chenille Rug Mahdi
         And I click on Add to Cart
