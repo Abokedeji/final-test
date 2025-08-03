@@ -28,7 +28,7 @@ jobs:
           CI: true
 
       - name: Wait for server to be ready
-        uses: jakejarvis/wait-action@v1
+        uses: jakejarvis/wait-action@master
         with:
           url: 'http://localhost:3000'
           timeout: '60'
