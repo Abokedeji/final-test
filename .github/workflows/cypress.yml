@@ -28,7 +28,7 @@ jobs:
           CI: true
 
       - name: Wait for server to be ready
-        uses: jakejarvis/wait-action@v2  # v2 is the latest stable version
+        uses: jakejarvis/wait-action@v4  # v2 is the latest stable version
         with:
           url: 'http://localhost:3000'
           timeout: '60'
