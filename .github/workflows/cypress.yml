@@ -12,12 +12,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # Latest stable
 
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4  # Latest stable
         with:
-          node-version: 18
+          node-version: 'node'  # Uses the latest LTS version of Node.js
 
       - name: Install dependencies
         run: npm ci
@@ -28,7 +28,7 @@ jobs:
           CI: true
 
       - name: Wait for server to be ready
-        uses: jakejarvis/wait-action@master
+        uses: jakejarvis/wait-action@v2  # v2 is the latest stable version
         with:
           url: 'http://localhost:3000'
           timeout: '60'
