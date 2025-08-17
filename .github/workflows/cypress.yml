@@ -7,31 +7,18 @@ on:
     branches: [main]
 
 jobs:
-  cypress-run:
+  runner:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4  
+      - name: Initialize node & npm
+        uses: actions/checkout@v4 
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4  
+      - name: Execute Cypress Tests
+        uses: cypress-io/github-action@v6
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
         with:
-          node-version: 'node'  
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Start server
-        run: npm start &
-        env:
-          CI: true
-
-      - name: Wait for server to be ready
-        uses: jakejarvis/wait-action@master  
-        with:
-          url: 'http://localhost:3000'
-          timeout: '60'
-
-      - name: Run Cypress tests
-        run: npx cypress run
+          name: reports
+          path: |
+            cypress/reports/
